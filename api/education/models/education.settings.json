@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educations",
+  "info": {
+    "name": "Education"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "instance_name": {
+      "type": "string"
+    },
+    "date_start": {
+      "type": "date"
+    },
+    "date_end": {
+      "type": "date"
+    },
+    "is_ongoing": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

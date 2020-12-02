@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hard_skills",
+  "info": {
+    "name": "Hard Skill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    }
+  }
+}

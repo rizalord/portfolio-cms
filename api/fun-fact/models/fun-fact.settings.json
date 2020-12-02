@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fun_facts",
+  "info": {
+    "name": "Fun Fact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    },
+    "icon_name": {
+      "type": "string"
+    }
+  }
+}

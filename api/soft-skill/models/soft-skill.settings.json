@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "soft_skills",
+  "info": {
+    "name": "Soft Skill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}

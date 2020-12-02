@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hard-skills",
+      "handler": "hard-skill.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hard-skills/count",
+      "handler": "hard-skill.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hard-skills/:id",
+      "handler": "hard-skill.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hard-skills",
+      "handler": "hard-skill.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hard-skills/:id",
+      "handler": "hard-skill.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hard-skills/:id",
+      "handler": "hard-skill.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

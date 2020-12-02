@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personal_infos",
+  "info": {
+    "name": "Personal Info",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/soft-skills",
+      "handler": "soft-skill.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/soft-skills/count",
+      "handler": "soft-skill.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/soft-skills/:id",
+      "handler": "soft-skill.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/soft-skills",
+      "handler": "soft-skill.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/soft-skills/:id",
+      "handler": "soft-skill.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/soft-skills/:id",
+      "handler": "soft-skill.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

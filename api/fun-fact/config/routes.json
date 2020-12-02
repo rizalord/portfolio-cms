@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fun-facts",
+      "handler": "fun-fact.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fun-facts/count",
+      "handler": "fun-fact.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fun-facts/:id",
+      "handler": "fun-fact.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fun-facts",
+      "handler": "fun-fact.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fun-facts/:id",
+      "handler": "fun-fact.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fun-facts/:id",
+      "handler": "fun-fact.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

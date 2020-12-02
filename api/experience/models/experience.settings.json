@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "name": "Experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "instance_name": {
+      "type": "string"
+    },
+    "date_start": {
+      "type": "date"
+    },
+    "date_end": {
+      "type": "date"
+    },
+    "role": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

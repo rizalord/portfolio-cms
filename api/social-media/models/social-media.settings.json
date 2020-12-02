@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_medias",
+  "info": {
+    "name": "Social Media"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "facebook_url": {
+      "type": "string"
+    },
+    "twitter_url": {
+      "type": "string"
+    },
+    "instagram_url": {
+      "type": "string"
+    },
+    "linkedin_url": {
+      "type": "string"
+    }
+  }
+}

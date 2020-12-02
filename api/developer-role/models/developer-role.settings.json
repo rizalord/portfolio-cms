@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "developer_roles",
+  "info": {
+    "name": "Developer Role",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

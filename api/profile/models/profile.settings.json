@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page_title": {
+      "type": "string"
+    },
+    "developer_roles": {
+      "collection": "developer-role"
+    },
+    "projects": {
+      "collection": "project"
+    },
+    "personal_info": {
+      "model": "personal-info"
+    },
+    "services": {
+      "collection": "service"
+    },
+    "hard_skills": {
+      "collection": "hard-skill"
+    },
+    "soft_skills": {
+      "collection": "soft-skill"
+    },
+    "educations": {
+      "collection": "education"
+    },
+    "experiences": {
+      "collection": "experience"
+    },
+    "project_categories": {
+      "collection": "project-category"
+    },
+    "social_media": {
+      "model": "social-media"
+    },
+    "contact_info": {
+      "model": "contact-info"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

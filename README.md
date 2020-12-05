@@ -59,3 +59,12 @@ yarn start
 
 ![](https://i.imgur.com/eZoa7Vd.png)
 ![](https://i.imgur.com/pmw42Sp.png)
+
+License
+-------
+ The project is available as open source under the terms of the MIT License.
+
+
+Troubleshooting
+-------
+ Please create an [issue](https://github.com/tsurupin/portfolio/issues).

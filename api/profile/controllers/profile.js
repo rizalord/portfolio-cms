@@ -23,7 +23,8 @@ module.exports = {
         "educations",
         "experiences",
         "social_media",
-        "contact_info"
+        "contact_info",
+        "fun_facts"
       ]);
   }
 };

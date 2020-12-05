@@ -57,6 +57,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "fun_facts": {
+      "collection": "fun-fact"
     }
   }
 }

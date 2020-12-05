@@ -41,6 +41,7 @@ Main Technology Stack
 -------
 * Strapi Headless CMS
 * CSS Modules
+* SQLite
 
 ## Run it in local
 

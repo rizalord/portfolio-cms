@@ -33,7 +33,8 @@
     },
     "categories": {
       "collection": "project-category",
-      "via": "project"
+      "via": "projects",
+      "dominant": true
     },
     "slug": {
       "type": "uid",

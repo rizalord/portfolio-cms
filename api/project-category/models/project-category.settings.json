@@ -18,9 +18,9 @@
       "type": "uid",
       "targetField": "name"
     },
-    "project": {
+    "projects": {
       "via": "categories",
-      "model": "project"
+      "collection": "project"
     }
   }
 }

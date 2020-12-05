@@ -38,6 +38,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "project_url": {
+      "type": "string"
     }
   }
 }

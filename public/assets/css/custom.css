@@ -792,7 +792,7 @@ html.mfp-helper {
   -moz-border-radius: 50%;
   border-radius: 50%;
   display: none;
-  background-image: url('../img/me2.jpeg');
+  background-image: url('../img/me.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1971,7 +1971,7 @@ html.mfp-helper {
 .lg-profile-picture {
   width: 100%;
   height: 100%;
-  background-image: url('../img/me2.jpeg');
+  background-image: url('../img/me.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

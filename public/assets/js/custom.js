@@ -265,11 +265,12 @@
         "November",
         "December",
       ]
+      
 
-      var d = monthNames[date.getDate() - 1]
-      var m = date.getMonth() + 1
+      var d = date.getDate()
+      var m = monthNames[date.getMonth()]
       var y = date.getFullYear()
-      return `${m} ${d} ${y}`
+      return `${d} ${m} ${y}`
     },
     setService: function (services) {
       return services.reduce(
@@ -423,6 +424,12 @@
       return projects.reduce((total, value) => {
         const tags = value.categories.map((e) => e.name).join(", ")
         const classes = value.categories.map(({ slug }) => slug).join(" ")
+        const imgSource =
+          metronal.repositories.baseUrl +
+          (typeof value.image.formats.large == "undefined"
+            ? value.image.url
+            : value.image.formats.large[value.image.formats.large.length - 1]
+                .url)
         const btnVisit =
           value.project_url == null
             ? ``
@@ -441,9 +448,7 @@
           `<div class="item ${classes} col-md-4 col-sm-6 col-12" style="position: absolute; left: 0px; top: 351px;">
         			<!-- Image Starts -->
         			<div class="image">
-        				<img src="${metronal.repositories.baseUrl + value.image.formats.small.url}" alt="${
-            value.title
-          }">
+        				<img src="${imgSource}" alt="${value.title}">
         			</div>
         			<!-- Image Ends -->
         			<!-- Overlay Starts -->
@@ -482,9 +487,7 @@
         			<!-- Project Popup Starts -->
         			<div id="${value.slug}" class="project-popup mfp-hide">
         				<!-- Project Picture On Popup Starts -->
-        				<img class="project-picture" src="${
-                  metronal.repositories.baseUrl + value.image.formats.small.url
-                }" alt="${value.title}">
+        				<img class="project-picture" src="${imgSource}" alt="${value.title}">
         				<!-- Project Picture On Popup Ends -->
         				<!-- Project Name Starts -->
         				<h5 class="project-name">${value.title}</h5>
@@ -536,6 +539,7 @@
   // Install Data
   metronal.install = function (data) {
     const {
+      image,
       developer_roles,
       personal_info,
       social_media,
@@ -550,8 +554,13 @@
       projects,
     } = data
 
+    const imagePicture = metronal.repositories.baseUrl + image.url
+
     metronal.typeIt.strings = developer_roles.map((e) => e.name)
 
+    $(
+      ".main-content#about .inner-content .content #personal-info .profile-picture, .lg-profile-picture"
+    ).css("background-image", `url(${imagePicture})`)
     $("#my-personal-description").html(personal_info.description)
     $(".first-name").html(personal_info.first_name)
     $(".last-name").html(personal_info.last_name)

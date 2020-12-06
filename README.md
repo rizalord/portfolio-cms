@@ -25,13 +25,14 @@ You can sign in to the demo account with the following info.
   </tbody>
 </table>
 
-**If you host it in Heroku the database and media files would be reset after a while, so do not be surprised if your changes is gone.**
+**If you host it in Heroku the database and media files would be reset after a while, so do not be surprised if your changes is gone.*
 
 Features
 -------
 * Responsive Design
 * Fast Query Data (using only single query)
-* PWA (Under Development)
+* PWA
+* Image Compression
 
 Motivation
 -------
